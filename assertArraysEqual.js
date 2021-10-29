@@ -1,4 +1,4 @@
-const eqArrays = function(arrayOne, arrayTwo) {
+const assertArraysEqual = function(arrayOne, arrayTwo) {
   //accumulator
   let output = false;
   //twin for loops to compare
