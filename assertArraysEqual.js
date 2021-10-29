@@ -1,4 +1,5 @@
-const assertArraysEqual = function(arrayOne, arrayTwo) {
+//EQ ARRAY
+const eqArrays = function(arrayOne, arrayTwo) {
   //accumulator
   let output = false;
   //twin for loops to compare
@@ -11,7 +12,12 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
       }
     }
   }
-  
+  return output
+};
+
+const assertArraysEqual = function(arrayOne, arrayTwo) {
+  // computation done by eqArray.
+  output = eqArrays(arrayOne,arrayTwo) 
   //output message
   if (output) {
     console.log(`✅✅✅ Assertion Passed: ${arrayOne} === ${arrayTwo}`);
